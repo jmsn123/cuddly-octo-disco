@@ -2,9 +2,12 @@
     height:55vmin;
     width:100%;
     margin-top: 10px;
+    margin-bottom: 100px;
     display: flex;
     align-items: center;
+    
 }
+
 .inner{
     overflow: hidden;
 }
@@ -15,8 +18,13 @@
 .inner:hover img {
     transform: scale(1.5);
 }
+ul{
+    padding-inline-start: initial;
+}
 li {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 .card {
     margin: 109px auto  ;
@@ -26,10 +34,11 @@ li {
     justify-content: center;
     text-align: center;
     /* padding: ; */
+    position: relative;
   
 }
 .card > img {
-    width:100%;
+    width:10em;
     height:20em;
     margin: 0 auto;
 }
@@ -38,10 +47,18 @@ li {
 margin-bottom: 10px;
 }
 .card-body > p{
-width:70%;
 margin: auto;
 font-size: 1.1rem;
 line-height: 2.1;
+}
+.card-body { 
+    position: absolute;
+    top:400px;
+    left:30px;
+    background: white;
+    width: 70%;
+    margin: 10px auto;
+    text-align: center;
 }
 
 .link {
